@@ -7,13 +7,13 @@ Source code and results for HW1 of CMPE591 course.
 
 <img src="results/mlp_training_loss.png" width="600">
 
-MSE loss in test: 0.0465
+MSE loss in test: 0.0444
 
 **Part 2: Position Prediction with CNN**
 
 <img src="results/cnn_training_loss.png" width="600">
 
-MSE loss in test: 0.000184
+MSE loss in test: 0.000202
 
 **Part 3: Image Reconstruction using Convolutional Autoencoders**
 
