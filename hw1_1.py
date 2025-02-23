@@ -70,12 +70,12 @@ def train():
             mlp_validation_losses.append(valid_loss.item())
             if mlp_validation_losses[-1] == min(mlp_validation_losses):
                 print("Saving best model, epoch: ", epoch)
-                torch.save(mlp_model.state_dict(), "save/mlp_best_model.pth")
+                torch.save(mlp_model.state_dict(), "hw1_1.pth")
     return mlp_training_losses
 
 def test():
     mlp_model = MLP()
-    mlp_model.load_state_dict(torch.load("save/mlp_best_model.pth"))
+    mlp_model.load_state_dict(torch.load("hw1_1.pth", weights_only=True))
     criterion = torch.nn.MSELoss()
 
     mlp_test_losses = []  

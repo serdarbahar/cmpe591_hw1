@@ -82,12 +82,12 @@ def train():
             cnn_validation_losses.append(valid_loss.item())
             if cnn_validation_losses[-1] == min(cnn_validation_losses):
                 print("Saving best model, epoch: ", epoch)
-                torch.save(cnn_model.state_dict(), "save/cnn_best_model.pth")
+                torch.save(cnn_model.state_dict(), "hw1_2.pth")
     return cnn_training_losses
 
 def test():
     cnn_model = CNN()
-    cnn_model.load_state_dict(torch.load("save/cnn_best_model.pth"))
+    cnn_model.load_state_dict(torch.load("hw1_2.pth", weights_only=True))
     criterion = torch.nn.MSELoss()
 
     cnn_test_losses = []  
