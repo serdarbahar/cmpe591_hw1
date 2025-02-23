@@ -1,7 +1,7 @@
 # HW1-CMPE591
 Source code and results for HW1 of CMPE591 course. 
 
-*Report*
+## Report
 
 **Part 1: MLP**
 
